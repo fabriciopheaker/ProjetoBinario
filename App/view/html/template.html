@@ -23,11 +23,13 @@
           <img src="app/view/img/robot.jpg" alt="Robo Interface" class="img">
           <section class="mx-5 mx-5 text-center ">
             <div class="mx-5 my-2 text-center ">
+              <form action="App/model/CalculoModel.php" method="post">
               <div class="input-group input-group-lg mb-3">
                 <span class="input-group-text bg-primary text-light" id="inputGroup-sizing-lg">0</span>
-                <input type="number" class="form-control" placeholder="Numero" aria-label="Numero" aria-describedby="basic-addon1">
+                <input type="number" class="form-control" name="numero" placeholder="Numero" aria-label="Numero" aria-describedby="basic-addon1">
                 <button type="submit" class="btn btn-primary">Enviar</button>
               </div>
+            </form>
             </div>
           </section>
       </div>
