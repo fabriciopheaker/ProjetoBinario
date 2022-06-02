@@ -2,16 +2,23 @@
 
 namespace App\model;
 
-class CalculoModel 
+use app\controllers\CalculoController;
+
+class CalculoModel
 {
-private $numero;
+    private $numero;
 
+    // vai capturar o numero que o usuario lançou no form.
 
-// vai capturar o numero que o usuario lançou no form.
-
-function getNumero()
-{
-    echo ( $this->$numero = $_POST["numero"] );
-  
+    function setNumero($param)
+    {
+        $this->numero = $param;
+    }
+    function getNumero()
+    {
+        echo $this->numero;
+    }
 }
-}
+
+$cc = new CalculoModel();
+$cc->getNumero();

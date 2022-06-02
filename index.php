@@ -2,6 +2,8 @@
 
 require_once './vendor/autoload.php';
 
+use app\model\CalculoModel;
+use app\controllers\CalculoController;
 
 $loader = new \Twig\Loader\FilesystemLoader('App/view/html');
 $twig = new \Twig\Environment($loader, [
@@ -9,7 +11,7 @@ $twig = new \Twig\Environment($loader, [
   'cache' => false,
 ]);
 
-$template = $twig->load('template.html');
+$template = $twig->load('home.html');
 echo $template->render();
 
 // $template = $twig->load('template.html');
