@@ -1,1 +1,3 @@
 # ProjetoBinario
+
+Esse Projeto surgiu de um Projeto/Trabalho Academico onde deveriamos usar o Scratch para transformar numeros de 1 a 100 em binarios, a ideia foi implentar algo um pouco mais abrangente, no começo iria utilizar padrão mvc com template twig etc, porém o projeto foi ficando complexo para o que deveria ser simples, então foi reduzido ao jeito que está, contudo ao decorrer do tempo deverá ser refatorado para uma melhora.

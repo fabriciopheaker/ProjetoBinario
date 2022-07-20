@@ -1,3 +1,13 @@
+<?php
+
+require_once  'app/controllers/CalculoController.php';
+
+$CalC = new app\Controllers\CalculoController();
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -25,7 +35,7 @@
             <div class="mx-5 my-2 text-center ">
               <div class="mx-5 my-2 text-center ">
                 <div class="mx-5 my-2 text-center ">
-                  <form action="App/controllers/CalculoController.php" method="post">
+                  <form action="" method="post">
                     <div class="input-group input-group-lg mb-3">
                       <span class="input-group-text bg-primary text-light" id="inputGroup-sizing-lg">0</span>
                       <input type="number" class="form-control" name="numero" placeholder="Numero" aria-label="Numero" aria-describedby="basic-addon1">
@@ -36,17 +46,25 @@
               </div>
             </div>
           </section>
+
+          <h1 class="text-primary"> <?php $CalC->getNumero(); ?> </h1>
+
+
+
+        </section>
       </div>
 
+      <section>
 
-  </section>
+      </section>
 
-  </div>
-  </main>
 
-  <footer>
 
-  </footer>
+    </main>
+
+    <footer>
+
+    </footer>
   </section>
 
 

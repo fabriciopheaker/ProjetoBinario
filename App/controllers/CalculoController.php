@@ -1,8 +1,10 @@
 <?php
 
-namespace app\controllers;
+namespace App\Controllers;
 
-use app\model\CalculoModel;
+require_once 'app/model/CalculoModel.php';
+
+
 
 class CalculoController
 {
@@ -10,13 +12,7 @@ class CalculoController
 
   function getNumero()
   {
-    $param = $this->numero = $_POST["numero"];
-
-    $cm = new CalculoModel();
-    $cm->setNumero($param);
-    return $this->numero;
+    $t = new \app\Model\CalculoModel();
+    $t->calculo();
   }
 }
-
-$cc = new CalculoController();
-echo $cc->getNumero();
